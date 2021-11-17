@@ -1,0 +1,16 @@
+<h1>Place List</h1>
+
+<ul>
+  {{#each allPlaces}}
+   
+ 
+
+      <li>Name: {{name}}</br>
+          Type: {{type}}
+        <a href="/places/{{id}}/delete">Delete</a>
+        <a href="/places/edit/{{id}}">Edit</a>
+    </li>
+    
+  {{/each}}
+</ul>
+<a href="/places/creat">Creat New</a>
